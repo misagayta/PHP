@@ -1,0 +1,116 @@
+
+#chale{
+	margin-top: 150px;
+	margin-right: 50px;
+	width: 200px;
+	height: 200px;
+	border-radius: 2px;
+}
+
+body{
+	background-image: url('Back.jpg');
+	width: 110%;
+	height: 100vh;
+	 background-repeat: no-repeat;
+	 background-position:top;
+	 --webkit-scrollbar {
+      display: none;
+  }
+	}
+
+li{
+	width: 50px;
+	height: 50px;
+	margin-top: 20px ;
+}
+
+li ,a {
+	text-decoration: none;
+	text-align: center;
+	color: yellow;
+	letter-spacing: 12px;
+
+}
+h1{
+	font-style: italic;
+	color:#1BD8E5;
+	letter-spacing: 10px;
+
+}
+nav{
+	margin-top: 100px;
+}
+.Menu{
+	margin-top: 300px;
+}
+.footer{
+ 
+  text-align: left;
+  height:300px;
+  border-radius: 50px;
+  opacity: 0.75;
+}
+.footer h4 {
+  margin-left: 120px;
+}
+.footer p {
+  margin-left: 120px;
+}
+.parrafo{
+  margin-left: 50px;
+}
+
+.footer img{
+  margin-top: 50px;
+  margin-right: 250px;
+  height:200px;
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 10px 10px rgba(0,0,0,0.75);
+
+
+}
+
+/*Practica 8*/
+#mensaje{
+            visibility: hidden; /*hiden= ocultar o no ser visible*/
+            min-width: 250px;   /*Minimo ancho es 205*/
+            margin-left: -125px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 2px;
+            padding: 16px;
+            left: 50%;
+            bottom: 30px;
+            font-size: 17px;
+        }
+        #mensaje.show{ 
+            visibility: visible; /*Se aplicara cuando le demos lcick*/
+            animation: fadein .5s fadeout .5s 2.5s; /*Animacion qeu se aplicara en 5s*/
+            -webkit-animation: fadein .5s fadeout .5s 2.5s; /*para que funcione en navegadores*/
+
+
+        }
+        /*keyframe= son pequellas secciones donde se insertan animaciones*/@keyframes fadein{
+            /*de donde a donde ira la animacion*/from{bottom: 0;opacity:0}
+            to{bottom: 30px;opacity: 1}
+            }
+
+        /*Para qu funcione tiene que usarse webkit*/@-webkit-keyframes fadein{
+                       from{bottom: 0;opacity:0}
+                        to{bottom: 30px;opacity:1}
+                    }  
+
+        /*Para es la salida para que desaparezca*/@keyframes fadeout{
+                       from{bottom: 30px;opacity:1}
+                        to{bottom: 0;opacity:0}
+                    }
+        @-webkit-keyframes fadeout{
+                       from{bottom: 30px;opacity:1}
+                        to{bottom: 0;opacity:0}
+                    }                                  
+
